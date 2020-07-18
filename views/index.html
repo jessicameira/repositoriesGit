@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+    {% block content %}
+        {% for language in languages %}
+        <a href="/search-result">
+        <input type="button" value="{{language}}" onclick="getLanguage('{{language}}')">
+        </a>
+        {% endfor %}
+    
+    {% endblock content %}
